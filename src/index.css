@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body {
+    @apply overflow-x-hidden bg-ink font-sans text-base text-paper antialiased;
+    background-image:
+      linear-gradient(rgba(255, 212, 0, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 212, 0, 0.045) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  :focus-visible { @apply outline-2 outline-offset-4 outline-white; outline-style: dashed; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex cursor-pointer items-center gap-2.5 border-[1.5px] border-brand bg-transparent px-6 py-3.5 text-[0.95rem] font-semibold text-brand transition duration-200 hover:-translate-y-0.5 hover:bg-brand/15;
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  }
+  .btn-primary { @apply bg-brand text-ink hover:bg-white; }
+  .btn-sm { @apply px-4 py-2 text-sm; }
+  .field { @apply w-full rounded-none border border-[#3a3a2a] bg-[#16160f] px-3.5 py-3 text-paper focus:border-brand focus:outline-none aria-[invalid=true]:border-red-500; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

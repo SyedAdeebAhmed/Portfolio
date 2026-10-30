@@ -1,0 +1,67 @@
+% ATS-friendly single-column resume. Compile with pdfLaTeX (Overleaf default).
+\documentclass[10.5pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\input{glyphtounicode}
+\pdfgentounicode=1 % keeps text selectable and machine-readable
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\large\bfseries}{}{0em}{\MakeUppercase}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+\setlist[itemize]{leftmargin=1.2em,itemsep=1pt,topsep=2pt}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Syed Adeeb Ahmed}\\[3pt]
+Software Engineer | AI \& Full Stack\\[2pt]
+\href{mailto:syed.adeebahmed.naqvi@gmail.com}{syed.adeebahmed.naqvi@gmail.com} \textbar{} \href{https://www.linkedin.com/in/syed-adeeb-ahmed-b885a6266/}{linkedin.com/in/syed-adeeb-ahmed-b885a6266} \textbar{} \href{https://github.com/SyedAdeebAhmed}{github.com/SyedAdeebAhmed}
+\end{center}
+
+\section*{Summary}
+Computer Science student focused on full-stack web development and AI-powered applications, with hands-on experience building React interfaces and projects that integrate LLMs. Interested in clean, maintainable code and useful products.
+
+\section*{Education}
+\textbf{Sukkur IBA University} \hfill Expected 2027\\
+BS Computer Science
+
+\section*{Experience}
+\textbf{Frontend Developer Intern} \hfill Mar 2026 -- Apr 2026\\
+\textit{Apexcify Technologys} \hfill Remote
+\begin{itemize}
+\item Built user interfaces with React.js, JavaScript, and Tailwind CSS.
+\item Worked with Redux for state management.
+\item Used Figma for interface design reference and planning.
+\end{itemize}
+
+\section*{Projects}
+\textbf{AI Tutor} \textbar{} \textit{Next.js, React, Tailwind CSS, Clerk, Gemini API} \hfill \href{https://ai-tutor-h7b1.vercel.app/}{Live Demo}
+\begin{itemize}
+\item AI-powered personalized learning platform that helps students identify learning preferences and weaknesses.
+\item Includes quizzes, learning resource discovery, and user authentication with Clerk.
+\item Integrates the Gemini API for AI-driven learning workflows.
+\end{itemize}
+
+\textbf{E-Commerce Web Application} \textbar{} \textit{React.js, JavaScript, Tailwind CSS} \hfill \href{https://apexcify-technologys-ecom-website.vercel.app/}{Live Demo}
+\begin{itemize}
+\item Responsive e-commerce interface focused on product discovery and intuitive navigation.
+\end{itemize}
+
+\section*{Technical Skills}
+\textbf{Frontend:} React.js, Next.js, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, Redux, Context API\\
+\textbf{Backend:} Node.js, Express.js, REST APIs, Java, Spring Boot, Python, FastAPI\\
+\textbf{Databases and Auth:} MongoDB, PostgreSQL, MySQL, JWT authentication, Role-based access control\\
+\textbf{AI:} LLM integration, RAG, Prompt engineering, Machine learning fundamentals, AI automation workflows\\
+\textbf{Tools:} Git, GitHub, Postman, Figma, VS Code, Vercel\\
+
+\section*{Certifications}
+\begin{itemize}
+\item Accelerate Your Job Search with AI, Google (Coursera), Aug 2025
+\item Foundations of Project Management, Google (Coursera), Aug 2025
+\item Technical Support Fundamentals, Google (Coursera), Aug 2025
+\item The Bits and Bytes of Computer Networking, Google (Coursera), Sep 2025
+\end{itemize}
+\end{document}
